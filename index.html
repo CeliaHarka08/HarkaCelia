@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação da Escola</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentação da Escola</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🏫 Colégio Estadual Presidente Vargas</h1>
-        <p>"Educando para um futuro melhor"</p>
-    </header>
+  <header>
+    <h1>🏫 Colégio Estadual Presidente Vargas </h1>
+    <p>“Educação é a base de um futuro melhor.”</p>
+  </header>
 
-    <main>
-        <section id="info">
-            <h2>📍 Informações da Escola</h2>
-            <div class="card">
-                <p><strong>Localização:</strong> Av. São Roque, 235, Pinhal de São Bento - PR </p>
-                <p><strong>Salas de Aula:</strong> <span id="salas">14</span></p>
-                <p><strong>Banheiros:</strong> <span id="banheiros">7</span></p>
-                <p><strong>Professores:</strong> <span id="professores">33</span></p>
-                <p><strong>Alunos:</strong> <span id="alunos">224</span></p>
-            </div>
-        </section>
+  <main>
+    <!-- SEÇÃO SOBRE A ESCOLA -->
+    <section id="sobre">
+      <h2>📘 Sobre a Escola</h2>
+      <p>
+        A <strong>Colégio Estadual Presidente Vargas</strong> é uma instituição dedicada à formação de cidadãos éticos, criativos e preparados
+        para os desafios do mundo moderno. Com ensino de qualidade e estrutura acolhedora, buscamos o desenvolvimento integral de nossos alunos.
+      </p>
+    </section>
 
-        <section id="detalhes">
-            <h2>📚 Sobre a Escola</h2>
-            <p>
-                A <strong>Colégio Estadual Presidente Vargas</strong> é uma instituição de ensino comprometida com a
-                formação integral dos alunos. Nossa missão é promover educação de qualidade, estimulando
-                o desenvolvimento intelectual, emocional e social de cada estudante. Contendo estudos integral para o ensino fundamental.
-            </p>
-            <ul>
-                <li>🏠 <strong>Fundada:</strong> 2002</li>
-                <li>🎯 <strong>Missão:</strong> Ensinar com excelência e formar cidadãos críticos.</li>
-                <li>💡 <strong>Visão:</strong> Ser referência em educação inovadora na região.</li>
-                <li>🤝 <strong>Valores:</strong> Respeito, Responsabilidade, Ética e Solidariedade.</li>
-            </ul>
-        </section>
+    <!-- SEÇÃO DE INFORMAÇÕES GERAIS -->
+    <section id="informacoes">
+      <h2>🏫 Informações Gerais</h2>
+      <div class="info-box">
+        <p><strong>Diretora:</strong> <span id="diretora">Daiane Aparecida Savoldi</span></p>
+        <p><strong>Localização:</strong> RUA PRES VARGAS, 235 CENTRO. 85727-000 Pinhal de São Bento - PR</p>
+        <p><strong>Cor da Escola:</strong> Cinza e Branco</p>
+        <p><strong>Alunos:</strong> <span id="alunos">224</span></p>
+        <p><strong>Professores:</strong> <span id="professores">33</span></p>
+        <p><strong>Salas:</strong> <span id="salas">15</span></p>
+        <p><strong>Banheiros:</strong> <span id="banheiros">8</span></p>
+      </div>
+    </section>
 
-        <section id="interativo">
-            <h2>📈 Atualize as Informações</h2>
-            <p>Altere os números abaixo e veja os dados da escola se atualizarem em tempo real!</p>
-            <div class="formulario">
-                <label>Salas:</label>
-                <input type="number" id="inputSalas" placeholder="Número de salas">
-                
-                <label>Banheiros:</label>
-                <input type="number" id="inputBanheiros" placeholder="Número de banheiros">
-                
-                <label>Professores:</label>
-                <input type="number" id="inputProfessores" placeholder="Número de professores">
-                
-                <label>Alunos:</label>
-                <input type="number" id="inputAlunos" placeholder="Número de alunos">
+    <!-- SEÇÃO DE ESTRUTURA -->
+    <section id="estrutura">
+      <h2>🏗️ Estrutura da Escola</h2>
+      <ul>
+        <li>🧑‍🏫 15 salas de aula equipadas com multimídia</li>
+        <li>💻 Laboratório de informática moderno</li>
+        <li>⚽ Quadra poliesportiva coberta</li>
+        <li>📚 Biblioteca ampla e climatizada</li>
+        <li>🍴 Refeitório com alimentação balanceada</li>
+        <li>🌳 Pátio arborizado e seguro</li>
+      </ul>
+    </section>
 
-                <button onclick="atualizarDados()">Atualizar</button>
-            </div>
-        </section>
-    </main>
+    <!-- SEÇÃO INTERATIVA -->
+    <section id="interativo">
+      <h2>🧮 Atualizar Dados</h2>
+      <p>Altere as informações abaixo para atualizar os dados da escola:</p>
 
-    <footer>
-        <p>© 2025 Colégio Estadual Presidente Vargas | Desenvolvido com ❤️ por alunos do 9º Ano</p>
-    </footer>
+      <div class="formulario">
+        <input type="text" id="inputDiretora" placeholder="Nome da diretora">
+        <input type="number" id="inputAlunos" placeholder="Número de alunos">
+        <input type="number" id="inputProfessores" placeholder="Número de professores">
+        <input type="number" id="inputSalas" placeholder="Número de salas">
+        <input type="number" id="inputBanheiros" placeholder="Número de banheiros">
+        <button onclick="atualizarEscola()">Atualizar Informações</button>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>© 2025 Colégio Estadual Presidente Vargas | Desenvolvido com 💙 por alunos da escola</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,106 +1,109 @@
-/* Estilo geral */
+/* ====== Estilo Geral ====== */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f7fa;
-    color: #333;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fb;
+  color: #333;
 }
 
-/* Cabeçalho */
+/* ====== Cabeçalho ====== */
 header {
-    background-color: #0066cc;
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 40px 10px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em;
+  font-size: 2.3em;
+  margin: 0;
 }
 
 header p {
-    font-style: italic;
-    font-size: 1.1em;
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top: 5px;
 }
 
-/* Conteúdo principal */
+/* ====== Seções ====== */
 main {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-/* Seções */
 section {
-    background: white;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 25px;
 }
 
 h2 {
-    color: #0056a3;
-    border-bottom: 2px solid #0056a3;
-    padding-bottom: 8px;
+  color: #004aad;
+  border-bottom: 2px solid #004aad;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
-/* Cards */
-.card {
-    background-color: #eaf3ff;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 1.1em;
+/* ====== Informações ====== */
+.info-box {
+  background-color: #e9f0ff;
+  border-radius: 8px;
+  padding: 15px;
+  line-height: 1.8em;
+  font-size: 1.1em;
 }
 
-/* Lista */
+/* ====== Estrutura ====== */
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
-    background-color: #eef4fa;
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: #eef4fa;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
 }
 
-/* Formulário */
+/* ====== Formulário ====== */
 .formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
 button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: 0.3s;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1em;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-/* Rodapé */
+/* ====== Rodapé ====== */
 footer {
-    text-align: center;
-    background-color: #002b5c;
-    color: white;
-    padding: 15px;
-    margin-top: 40px;
+  background-color: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
