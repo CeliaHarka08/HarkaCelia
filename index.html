@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação da Escola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🏫 Escola Exemplo</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#alunos">Alunos</a></li>
+                <li><a href="#professores">Professores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre a Escola</h2>
+        <p><strong>Missão:</strong> Formar cidadãos conscientes, críticos e preparados para o futuro.</p>
+        <p><strong>Visão:</strong> Ser referência em educação de qualidade, com foco no desenvolvimento integral dos alunos.</p>
+        <p><strong>Valores:</strong> Respeito, Responsabilidade, Excelência, Inovação, Solidariedade.</p>
+    </section>
+
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <div class="formulario">
+            <h3>Adicionar Aluno</h3>
+            <input type="text" id="nomeAluno" placeholder="Nome do aluno">
+            <input type="number" id="idadeAluno" placeholder="Idade">
+            <input type="text" id="cursoAluno" placeholder="Curso">
+            <button onclick="adicionarAluno()">Cadastrar Aluno</button>
+        </div>
+
+        <div class="formulario">
+            <h3>Adicionar Professor</h3>
+            <input type="text" id="nomeProfessor" placeholder="Nome do professor">
+            <input type="number" id="idadeProfessor" placeholder="Idade">
+            <input type="text" id="disciplinaProfessor" placeholder="Disciplina">
+            <button onclick="adicionarProfessor()">Cadastrar Professor</button>
+        </div>
+    </section>
+
+    <section id="alunos">
+        <h2>Lista de Alunos</h2>
+        <ul id="listaAlunos"></ul>
+    </section>
+
+    <section id="professores">
+        <h2>Lista de Professores</h2>
+        <ul id="listaProfessores"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Escola Exemplo — Desenvolvido com ❤️ no VSCode</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
